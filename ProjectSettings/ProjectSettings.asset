@@ -416,9 +416,49 @@ PlayerSettings:
   XboxOneSplashScreen: {fileID: 0}
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
-  intPropertyNames: []
-  boolPropertyNames: []
-  stringPropertyNames: []
+  intPropertyNames:
+  - Standalone::ScriptingBackend
+  - WebGL::ScriptingBackend
+  - WebGL::audioCompressionFormat
+  - WebGL::exceptionSupport
+  - WebGL::memorySize
+  Standalone::ScriptingBackend: 0
+  WebGL::ScriptingBackend: 1
+  WebGL::audioCompressionFormat: 4
+  WebGL::exceptionSupport: 1
+  WebGL::memorySize: 256
+  boolPropertyNames:
+  - WebGL::analyzeBuildSize
+  - WebGL::dataCaching
+  - WebGL::useEmbeddedResources
+  WebGL::analyzeBuildSize: 0
+  WebGL::dataCaching: 0
+  WebGL::useEmbeddedResources: 0
+  stringPropertyNames:
+  - Analytics_ServiceEnabled::Analytics_ServiceEnabled
+  - Build_ServiceEnabled::Build_ServiceEnabled
+  - Collab_ServiceEnabled::Collab_ServiceEnabled
+  - ErrorHub_ServiceEnabled::ErrorHub_ServiceEnabled
+  - Game_Performance_ServiceEnabled::Game_Performance_ServiceEnabled
+  - Hub_ServiceEnabled::Hub_ServiceEnabled
+  - Purchasing_ServiceEnabled::Purchasing_ServiceEnabled
+  - UNet_ServiceEnabled::UNet_ServiceEnabled
+  - Unity_Ads_ServiceEnabled::Unity_Ads_ServiceEnabled
+  - WebGL::emscriptenArgs
+  - WebGL::template
+  - additionalIl2CppArgs::additionalIl2CppArgs
+  Analytics_ServiceEnabled::Analytics_ServiceEnabled: False
+  Build_ServiceEnabled::Build_ServiceEnabled: False
+  Collab_ServiceEnabled::Collab_ServiceEnabled: False
+  ErrorHub_ServiceEnabled::ErrorHub_ServiceEnabled: False
+  Game_Performance_ServiceEnabled::Game_Performance_ServiceEnabled: False
+  Hub_ServiceEnabled::Hub_ServiceEnabled: False
+  Purchasing_ServiceEnabled::Purchasing_ServiceEnabled: False
+  UNet_ServiceEnabled::UNet_ServiceEnabled: False
+  Unity_Ads_ServiceEnabled::Unity_Ads_ServiceEnabled: False
+  WebGL::emscriptenArgs: 
+  WebGL::template: APPLICATION:Default
+  additionalIl2CppArgs::additionalIl2CppArgs: 
   vectorPropertyNames: []
   cloudProjectId: 57596ac2-6473-48d3-b7f2-aaeb6569a60a
   projectName: drs3dStudy_
