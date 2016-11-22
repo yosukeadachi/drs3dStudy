@@ -5,7 +5,9 @@ using System.Collections;
 /// Damage receiver for NPC
 /// </summary>
 public class NPC_DamageReceiver : MonoBehaviour {
-	
+
+	public Scorer Scorer;
+
 	Animator m_Animator;
 	
 	void Start()
@@ -17,7 +19,10 @@ public class NPC_DamageReceiver : MonoBehaviour {
 	{	
 		// die right away when recieving damade
 		if(m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.SimpleLocomotion"))
+		{
 			m_Animator.SetBool("Die",true);
+			Scorer.AddScore();
+		}
 	}
 	
 	void Update()

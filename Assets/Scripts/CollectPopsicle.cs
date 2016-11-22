@@ -17,7 +17,7 @@ public class CollectPopsicle : MonoBehaviour {
 		{
 			Destroy(gameObject);
 			
-			Spawner.GetComponent<Spawner>().BeginSpawning();
+//			Spawner.GetComponent<Spawner>().BeginSpawning();
 		}
 	}
 	
