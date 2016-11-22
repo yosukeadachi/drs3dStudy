@@ -19,4 +19,8 @@ public class Scorer : MonoBehaviour {
 		score ++;
 		Debug.Log("score " + score);
 	}
+
+	public int GetScore() {
+		return score;
+	}
 }
