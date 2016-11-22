@@ -25,7 +25,7 @@ public class Player_Shoot : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{		
-		bool shoot = Input.GetButton("Fire1");
+		bool shoot = Input.GetButton("Fire2");
 		m_Animator.SetBool("Shoot",shoot);
 
 		if(CanShoot() && shoot)
