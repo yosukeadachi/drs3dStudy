@@ -3,6 +3,7 @@ using System.Collections;
 
 public class ScoreView : MonoBehaviour {
 	public Scorer Scorer;
+	public GameRuler GameRuler;
 	void OnGUI() 
 	{
 		// GUIの見た目を変える。
@@ -24,6 +25,15 @@ public class ScoreView : MonoBehaviour {
 		// スタイルの設定。
 		guiStyle.normal = styleState;
 
-		GUI.Label(new Rect(130, 0, 65, 20),"Score " + Scorer.GetScore(), guiStyle);
+		if(GameRuler.isInGame()) {
+			GUI.Label(new Rect(130, 0, 65, 20),"Score " + Scorer.GetScore(), guiStyle);
+		}
+		else if(GameRuler.isGameOver()) {
+			GUI.Label(new Rect(0, 0, Screen.width, Screen.height),"GameOver", guiStyle);
+		}
+		else if(GameRuler.isGoal()) {
+			GUI.Label(new Rect(0, 0, Screen.width, Screen.height),"Goal", guiStyle);
+			GUI.Label(new Rect(130, 0, 65, 20),"Score " + Scorer.GetScore(), guiStyle);
+		}
 	}
 }

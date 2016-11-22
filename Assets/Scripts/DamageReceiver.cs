@@ -12,7 +12,7 @@ public class DamageReceiver : MonoBehaviour
 	
 	Animator m_Animator;	
 	float m_Damage;
-	
+	public GameRuler GameRuler;
 	void Start()
 	{		
 		m_Animator = GetComponent<Animator>();        
@@ -35,10 +35,12 @@ public class DamageReceiver : MonoBehaviour
 		else if(info.IsName("Base Layer.Reviving"))
 		{			
 			m_Animator.SetBool("Dead",false);
+
 		}
 		else if(info.IsName ("Base Layer.Death") && info.normalizedTime > 3)
 		{	
-			m_Damage = 0;			
+			GameRuler.setGameOver();
+//			m_Damage = 0;			
 		}
 	}
 	

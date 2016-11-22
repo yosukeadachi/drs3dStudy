@@ -8,6 +8,7 @@ using System.Collections;
 public class CollectPopsicle : MonoBehaviour {
 	
 	public GameObject Spawner;	
+	public GameRuler GameRuler;
 	
 	void DoCollect(Collider collider)
 	{
@@ -16,7 +17,7 @@ public class CollectPopsicle : MonoBehaviour {
 		if(collider.gameObject.tag == "Player")
 		{
 			Destroy(gameObject);
-			
+			GameRuler.setGoal();
 //			Spawner.GetComponent<Spawner>().BeginSpawning();
 		}
 	}
